@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-wrapper">
+        <div class="logo">
+            <i class="fab fa-js fa-3x">
+            </i> <strong></strong>
+        </div>
+        <div class="burger-icon"><i class="fas fa-bars"></i> MENU</div>
+        <ul class="nav-items main-nav mobile-hide">
+            <li class="list-item"><a href="index.html">Home</a></li>
+            <li class="list-item"><a href="history.html">History</a></li>
+            <li class="list-item"><a href="features.html">Features</a></li>
+            <li class="list-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <h1>A brief history of JavaScript</h1>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Sidenav</span>
+            <div id="mySidenav" class="sidenav text-left">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#origin">Origin</a>
+                <a href="#development">Development</a>
+                <a href="#references">References</a>
+            </div>
+            <div class="main-content">
+                <div id="history-main" class="text-left text-main">
+                    <h2 id="origin">Origin</h2>
+                    <p> JavaScript was born on the Internet, and came out with the advent of browsers. </p>
+                    <p> Looking back at its history, we must start with the history of the browser.
+                        At the end of 1990, Tim Berners-Lee, a scientist at the European Organization for Nuclear Energy
+                        Research
+                        (CERN), invented the World Wide Web based on the Internet, the world's largest computer network,
+                        and was
+                        able to
+                        browse web pages online. The earliest web pages can only be viewed in the terminal of the
+                        operating
+                        system, that
+                        is to say, only the command line operation can be used, and the web pages are displayed in the
+                        character
+                        window,
+                        which is of course very inconvenient. </p>
+                    <p> At the end of 1992, the National Center for Supercomputer Applications (NCSA) began developing a
+                        standalone
+                        browser called Mosaic. This is the first browser in human history, from which the web page can
+                        be viewed
+                        in a
+                        graphical interface window.</p>
+                    <p> In October 1994, a major NCSA programmer, Marc Andreessen, joined venture capitalist Jim Clark
+                        to form
+                        Mosaic
+                        Communications, which was later renamed Netscape. The direction of this company is to develop a
+                        new
+                        generation
+                        of browsers for ordinary users based on Mosaic. Netscape Navigator</p>
+                    <p>In December 1994, Navigator released version 1.0 with a market share of more than 90%.</p>
+                    <p>etscape quickly discovered that the Navigator browser needed a scripting language that could be
+                        embedded
+                        in web
+                        pages to control browser behavior. At that time, the network speed was very slow and the
+                        Internet access
+                        fee was
+                        very expensive, and some operations should not be completed on the server side. For example, if
+                        the user
+                        forgets
+                        to fill in the "username", he clicks the "send" button. It is a bit too late to find this on the
+                        server.
+                        It is
+                        best to tell the user "please fill in the username" before the user sends the data. This
+                        requires
+                        embedding a
+                        small program in the web page and letting the browser check if each column is filled.</p>
+                    <p>The management's vision for this browser scripting language is that the functionality does not
+                        need to be
+                        too
+                        strong, the syntax is simple, and it is easy to learn and deploy. That year, just after Sun's
+                        Java
+                        language came
+                        out, the marketing campaign was very successful. Netscape decided to work with Sun to support
+                        embedded
+                        Java
+                        applets (later called Java applets). However, whether the browser scripting language chooses
+                        Java is
+                        controversial. Later, I decided not to use Java because the web applet didn't need the "heavy"
+                        syntax of
+                        Java.
+                        However, it also determines that the syntax of the scripting language is close to Java and can
+                        support
+                        Java
+                        programs. These assumptions directly rule out the use of existing languages such as Perl,
+                        Python, and
+                        TCL.</p>
+                    <p> In 1995, Netscape hired programmer Brendan Eich to develop this web scripting language. Brendan
+                        Eich has
+                        a
+                        strong background in functional programming and hopes to implement this new language based on
+                        the Scheme
+                        language (a dialect of the LISP language of the functional language).</p>
+                    <P> In May 1995, Brendan Eich designed the first version of the language in just 10 days. It is a
+                        hodgepodge
+                        with
+                        multiple sources of grammar.</P>
+                    <h2 id="development">Development</h2>
+                    <p> Netscape's browser scripting language, originally called Mocha, changed to LiveScript in
+                        September 1995.
+                        In
+                        December, Netscape and Sun (the inventor and owner of the Java language) reached an agreement
+                        that
+                        allowed the
+                        language to be called JavaScript. In this way, Netscape can leverage the power of the Java
+                        language, and
+                        Sun has
+                        extended its reach to the browser.</p>
+                    <p>On December 4, 1995, Netscape and Sun jointly released the JavaScript language, which promoted
+                        JavaScript
+                        as a
+                        supplement to Java. It is a lightweight Java that is designed to operate web pages.</p>
+                    <p>In March 1996, the Navigator 2.0 browser officially built the JavaScript scripting language.</p>
+                    <h2 id="references">References</h2>
+                    <ul>
+
+                        <li>John Dalziel,<a
+                                href="http://creativejs.com/2013/06/the-race-for-speed-part-4-the-future-for-javascript/">The
+                                race for speed part 4: The future for JavaScript</a>
+                        </li>
+                        <li>Axel Rauschmayer,<a href="https://2ality.com/2013/06/basic-javascript.html"> Basic
+                                JavaScript
+                                for the impatient programmer</a></li>
+                        <li>Axel Rauschmayer,<a
+                                href="https://supmtioujda.ma/wp-content/uploads/2014/04/past-present-and-future-of-javascript.pdf">
+                                The Past, Present, and Future of JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-right">
+            <p>&copy;Hong He</p>
+        </footer>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "170px";
+                document.getElementById("history-main").style.marginLeft = "180px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("history-main").style.marginLeft = "10px";
+            }
+        </script>
+</body>
+
+</html>
+<footer class="footer">
+    <div class="foot1">
+        <h3 class="logo">Javascrip</h3>
+        <br />
+        <div class="copyright">Made by Hong He & Jose&copy; 2019</div>
+</footer>
+</body>
+
+</html>
